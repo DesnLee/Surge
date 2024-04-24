@@ -1,0 +1,11 @@
+#!name=Surge 授权检测
+#!desc=
+#!author=DesnLee
+#!arguments=LICENSES,HIDE_EMAIL:false
+#!arguments-desc=LICENSES\nSurge 授权信息，格式为 “邮箱:授权码:版本”\n- 版本为 ios、mac、mac3，mac 版 3 以上均填写 mac3\n- 多个授权信息使用英文 “|” 分隔\n\nHIDE_EMAIL\n面板是否隐藏邮箱，填写 true 隐藏邮箱
+
+[Panel]
+surge license panel = script-name=surge license, title="Surge 授权检测", content="请配置授权信息", update-interval=5
+
+[Script]
+surge license = type=generic, timeout=5, script-path=https://raw.githubusercontent.com/DesnLee/Surge/master/scripts/surge-licenses.js,debug=1, argument="LICENSES={{{LICENSES}}}&HIDE_EMAIL={{{HIDE_EMAIL}}}"
