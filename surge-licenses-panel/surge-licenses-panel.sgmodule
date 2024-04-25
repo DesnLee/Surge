@@ -8,4 +8,4 @@
 surge license panel = script-name=surge license, title="Surge 授权检测", content="请配置授权信息", update-interval=5
 
 [Script]
-surge license = type=generic, timeout=5, script-path=https://raw.githubusercontent.com/DesnLee/Surge/master/surge-license-panel/surge-licenses.js, argument="LICENSES={{{LICENSES}}}&HIDE_EMAIL={{{HIDE_EMAIL}}}"
+surge license = type=generic, timeout=5, script-path=https://raw.githubusercontent.com/DesnLee/Surge/master/surge-licenses-panel/surge-licenses.js, argument="LICENSES={{{LICENSES}}}&HIDE_EMAIL={{{HIDE_EMAIL}}}"
